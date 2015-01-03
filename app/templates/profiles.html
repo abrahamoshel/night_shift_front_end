@@ -1,0 +1,28 @@
+<div ng-controller="ProfileController">
+  <div ng-repeat="profile in profs">
+    <profile-info></profile-info>
+
+    <button ng-show="profile.hasProfile"> Profile </button>
+  </div>
+
+  <form name="profileForm"
+    data-ng-submit="profileForm.$valid && addProfile(profs)" novalidate>
+
+    <blockquote>
+      <b>Stars: {{selfy.stars}}</b>
+      {{ selfy.title }}
+      <cite>by: {{ selfy.author }}</cite>
+    </blockquote>
+    <select ng-model="selfy.stars">
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <textarea ng-model="selfy.title" placeholder="Right your description" required></textarea>
+    <label>by:</label>
+    <input ng-model="selfy.author" type="email" placeholder="email@example.com" required/>
+    <div>{{profileForm.$valid}}</div>
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+

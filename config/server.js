@@ -14,8 +14,28 @@
 
 module.exports = {
   drawRoutes: function(app) {
-    // app.get('/api/greeting/:message', function(req, res){
-    //   res.json({ message: "OK, "+req.params.message });
-    // });
+    app.post('/login', function(req, res) {
+      res.json({ message: 'logging in!' });
+    });
+
+    app.post('/logout', function(req, res) {
+      res.json({ message: 'logging out!'});
+    });
+
+    app.get('/books', function (req, res) {
+      res.json([
+        {title: 'Great Expectations', author: 'Dickens'},
+        {title: 'Foundation Series', author: 'Asimov'},
+        {title: 'Treasure Island', author: 'Stephenson'}
+      ]);
+    });
+
+    app.get('/api/v1/profiles', function (req, res) {
+      res.json([
+        {id: 1, title: 'Great Expectations', author: 'Dickens', hasProfile: true },
+        {id: 2, title: 'Foundation Series', author: 'Asimov', hasProfile: false },
+        {id: 3, title: 'Treasure Island', author: 'Stephenson' }
+      ]);
+    });
   }
 };

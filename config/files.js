@@ -8,16 +8,25 @@
 module.exports = function(lineman) {
   //Override file patterns here
   return {
+    js: {
+      vendor: [
+        "vendor/js/angular.js",
+        "vendor/js/jquery.js",
+        "vendor/js/bootstrap.js",
+        "vendor/js/**/*.js"
+      ],
+      app: [
+        "app/js/app.js",
+        "app/js/**/*.js"
+      ]
+    },
 
-    // As an example, to override the file patterns for
-    // the order in which to load third party JS libs:
-    //
-    // js: {
-    //   vendor: [
-    //     "vendor/js/underscore.js",
-    //     "vendor/js/**/*.js"
-    //   ]
-    // }
-
+    less: {
+      compile: {
+        options: {
+          paths: ["vendor/css/normalize.css", "vendor/css/**/*.css", "app/css/**/*.less"]
+        }
+      }
+    }
   };
 };
