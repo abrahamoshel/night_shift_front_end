@@ -7,10 +7,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
-  <body class="container-fluid">
+  <body>
+    <div class="row">
+      <div style="width: 100%; height:100%; overflow: hidden;">
+
+
+
+        <div class="cube-container">
+          <div class="cube cube-gap">
+            <figure class="side top"><a href="http://www.apple.com"></a></figure>
+            <figure class="side left"><a href="http://www.apple.com"></a></figure>
+            <figure class="side right"><a href="http://www.apple.com">DJ Replay</a></figure>
+          </div>
+          <div class="cube">
+            <figure class="side top"><a href="http://www.apple.com"></a></figure>
+            <figure class="side left"><a href="http://www.apple.com">Now Playing</a></figure>
+            <figure class="side right"><a href="http://www.apple.com"></a></figure>
+          </div>
+
+
+
+
+          <div class="cube">
+            <figure class="side top"><a href="http://www.apple.com"></a></figure>
+            <figure class="side left"><a href="http://www.apple.com"></a></figure>
+            <figure class="side right"><a href="http://www.apple.com"></a></figure>
+          </div>
+          <div class="cube">
+            <figure class="side top red"><a href="http://www.apple.com">record icon</a></figure>
+            <figure class="side left purple"><a href="http://www.apple.com">person icon</a></figure>
+            <figure class="side right blue"><a href="http://www.apple.com">drink icon</a></figure>
+          </div>
+          <div class="cube">
+            <figure class="side top"><a href="http://www.apple.com"></a></figure>
+            <figure class="side left"><a href="http://www.apple.com"></a></figure>
+            <figure class="side right"><a href="http://www.apple.com"></a></figure>
+          </div>
+
+
+          <div class="cube cube-gap">
+            <figure class="side top"><a href="http://www.apple.com">Ice Breaker</a></figure>
+            <figure class="side left"><a href="http://www.apple.com"></a></figure>
+            <figure class="side right"><a href="http://www.apple.com"></a></figure>
+          </div>
+          <div class="cube">
+            <figure class="side top"><a href="http://www.apple.com">Drink Link</a></figure>
+            <figure class="side left"><a href="http://www.apple.com"></a></figure>
+            <figure class="side right"><a href="http://www.apple.com"></a></figure>
+          </div>
+          <div class="cube">
+            <figure class="side top"><a href="http://www.apple.com"></a></figure>
+            <figure class="side left"><a href="http://www.apple.com"></a></figure>
+            <figure class="side right"><a href="http://www.apple.com"></a></figure>
+          </div>
+
+          <div class="cube">
+            <figure class="side top"><a href="http://www.apple.com">this one</a></figure>
+            <figure class="side left"><a href="http://www.apple.com"></a></figure>
+            <figure class="side right"><a href="http://www.apple.com"></a></figure>
+          </div>
+          <div class="cube">
+            <figure class="side top"><a href="http://www.apple.com"></a></figure>
+            <figure class="side left"><a href="http://www.apple.com"></a></figure>
+            <figure class="side right"><a href="http://www.apple.com"></a></figure>
+          </div>
+
+      </div>
+      </div>
+    </div>
+
+
+
     <div class="row">
       <div class="large-12" ng-controller="PanelController as panel">
-        <h1>A Lineman Angular Setup</h1>
         <ul class="nav nav-pills">
             <li ng-class="{active: panel.isSelected(1)}"><a href ng-click="panel.selectTab(1)"> One </a></li>
             <li ng-class="{active: panel.isSelected(2)}"><a href ng-click="panel.selectTab(2)"> Two </a></li>
